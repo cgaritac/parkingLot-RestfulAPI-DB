@@ -1,0 +1,95 @@
+﻿@model IEnumerable<Proyecto_3.Models.Tiquete>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align:center">LISTADO DE TIQUETES</h1>
+
+<p>
+    <button onclick="location.href='@Url.Action("Create")'" class="mb-3 btn-primary">Agregar Tiquete</button>
+    <br>
+    <button onclick="location.href='@Url.Action("Details")' + '?id=' + document.getElementById('tiqueteId').value" class="btn-primary" style="margin-right:25px" ">Buscar Tiquete</button>
+    <input type="number" id="tiqueteId" placeholder="Número de tiquete">
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ingreso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Placa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Venta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdParqueo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @item.Ingreso.ToString("dd/MM/yyyy HH:mm:ss")
+            </td>
+            <td>
+                @if (item.Salida == new DateTime(1900, 1, 1))
+                {
+                    <text>N.A.</text>
+                }
+                else
+                {
+                    @item.Salida.ToString("dd/MM/yyyy HH:mm:ss")
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Placa)
+            </td>
+            <td>
+                @if (item.Venta == 0)
+                {
+                    <text>N.A.</text>
+                }
+                else
+                {
+                    @Html.DisplayFor(modelItem => item.Venta)
+                }       
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdParqueo)
+            </td>
+            <td>
+                @if (item.Estado == "Abierto")
+                {
+                    @Html.ActionLink("Cerrar tiquete", "Edit", new { id=item.Id })
+                    <br>
+                    @Html.ActionLink("Eliminar", "Delete", new { id=item.Id })
+                }
+                else
+                {
+                    @Html.ActionLink("Eliminar", "Delete", new { id=item.Id })
+                }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

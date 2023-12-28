@@ -1,0 +1,35 @@
+﻿@model Proyecto_3.Models.Reporte
+
+@{
+    ViewData["Title"] = "VentasMes";
+}
+
+<h1 style="text-align:center" class="mb-5">Ventas del Mes de @Html.DisplayFor(model => model.Mes)</h1>
+
+<div>
+    <h4>Detalle del Reporte</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Venta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Venta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdParqueo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdParqueo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Regresar</a>
+</div>

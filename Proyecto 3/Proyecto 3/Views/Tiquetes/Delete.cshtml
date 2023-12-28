@@ -1,0 +1,77 @@
+﻿@model Proyecto_3.Models.Tiquete
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 style="text-align:center">ELIMINAR TIQUETE N° @Html.DisplayFor(model => model.Id)</h1>
+
+<div>
+    <h2>Datos del Tiquete</h2>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ingreso)
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.Ingreso.ToString("dd/MM/yyyy HH:mm:ss")
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Salida)
+        </dt>
+        <dd class = "col-sm-10">
+            @if (Model.Salida == new DateTime(1, 1, 1))
+            {
+                <text>N.A.</text>
+            }
+            else
+            {
+                @Model.Salida.ToString("dd/MM/yyyy HH:mm:ss")
+            }
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Venta)
+        </dt>
+        <dd class = "col-sm-10">
+            @if (Model.Venta == 0)
+            {
+                <text>N.A.</text>
+            }
+            else
+            {
+                @Html.DisplayFor(model => model.Venta)
+            }
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdParqueo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdParqueo)
+        </dd>
+    </dl>
+    
+    <h3>¿Desea proceder con la eliminación del registro del tiquete?</h3>
+
+    <form asp-action="Delete" class="mt-4">
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index">Regresar</a>
+    </form>
+</div>

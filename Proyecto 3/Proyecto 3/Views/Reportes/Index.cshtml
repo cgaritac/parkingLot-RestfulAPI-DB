@@ -1,0 +1,93 @@
+﻿@model Proyecto_3.Models.Reporte
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align:center" class="mb-5">LISTADO DE REPORTES</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Ventas del mes</h2>
+            <form asp-action="VentasMes" class="mb-5">
+                <div>
+                    <label>Número de Parqueo: </label>
+                    <input asp-for="IdParqueo"/>
+                </div>
+                <div>
+                    <label>Mes: </label>
+                    <select asp-for="Mes">
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                </div>
+                <button type="submit" class="mt-2 btn-primary">Obtener Ventas</button>
+            </form>
+
+            <h2>Ventas del día</h2>
+            <form asp-action="VentasDia">
+                <div>
+                    <label>Número de Parqueo: </label>
+                    <input asp-for="IdParqueo" />
+                </div>
+                <div>
+                    <label>Fecha: </label>
+                    <input asp-for="Salida" type="date" />
+                </div>
+                <button type="submit" class="mt-2 btn-primary">Obtener Ventas</button>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <h2>Ventas en Rango</h2>
+            <form asp-action="VentasRango" class="mb-3">
+                <div>
+                    <label>Número de Parqueo: </label>
+                    <input asp-for="IdParqueo" />
+                </div>
+                <div>
+                    <label>Fecha Inicial: </label>
+                    <input asp-for="Ingreso" type="date" />
+                </div>
+                <div>
+                    <label>Fecha Final: </label>
+                    <input asp-for="Salida" type="date" />
+                </div>
+                <button type="submit" class="mt-2 btn-primary">Obtener Ventas</button>
+            </form>
+
+            <h2>Mejores Parqueos</h2>
+            <form asp-action="MejoresParqueos">
+                <div>
+                    <label>Mes: </label>
+                    <select asp-for="Mes">
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                </div>
+                <button type="submit" class="mt-2 btn-primary">Obtener Listado</button>
+            </form>
+        </div>
+    </div>
+</div>

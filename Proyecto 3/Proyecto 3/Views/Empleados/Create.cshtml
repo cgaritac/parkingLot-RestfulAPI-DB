@@ -1,0 +1,114 @@
+﻿@model Proyecto_3.Models.Empleado
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="text-align:center">AGREGAR EMPLEADO</h1>
+
+<h2>Datos del Empleado</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <strong>
+                    @Html.DisplayNameFor(model => model.Id):
+                </strong>
+                @Html.DisplayFor(model => model.Id)
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="FechaIngreso" class="control-label"></label>
+                </strong>
+                <input asp-for="FechaIngreso" class="form-control" type="date" />
+                <span asp-validation-for="FechaIngreso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="Nombre" class="control-label"></label>
+                </strong>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="PrimerApellido" class="control-label"></label>
+                </strong>
+                <input asp-for="PrimerApellido" class="form-control" />
+                <span asp-validation-for="PrimerApellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="SegundoApellido" class="control-label"></label>
+                </strong>
+                <input asp-for="SegundoApellido" class="form-control" />
+                <span asp-validation-for="SegundoApellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="FechaNacimiento" class="control-label"></label>
+                </strong>
+                <input asp-for="FechaNacimiento" class="form-control" type="date"/>
+                <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="NumeroCedula" class="control-label"></label>
+                </strong>
+                <input asp-for="NumeroCedula" class="form-control" />
+                <span asp-validation-for="NumeroCedula" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="Direccion" class="control-label"></label>
+                </strong>
+                <input asp-for="Direccion" class="form-control" />
+                <span asp-validation-for="Direccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="Email" class="control-label"></label>
+                </strong>
+                <input asp-for="Email" class="form-control"/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="Telefono" class="control-label"></label>
+                </strong>
+                <input asp-for="Telefono" class="form-control" />
+                <span asp-validation-for="Telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="TipoContacto" class="control-label"></label>
+                </strong>
+                <select asp-for="TipoContacto" class="form-control">
+                    <option value="Esposa">Esposa</option>
+                    <option value="Madre">Madre</option>
+                    <option value="Padre">Padre</option>
+                    <option value="Hijos">Hijos</option>
+                    <option value="Otro">Otro</option>
+                 </select>
+                <span asp-validation-for="TipoContacto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="IdParqueo" class="control-label"></label>
+                </strong>
+                <input asp-for="IdParqueo" class="form-control" />
+                <span asp-validation-for="IdParqueo" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-4">
+                <input type="submit" value="Agregar" class="btn btn-primary" /> | 
+                <a asp-action="Index">Regresar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

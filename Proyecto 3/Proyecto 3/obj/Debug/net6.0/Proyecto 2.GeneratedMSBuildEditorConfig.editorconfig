@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Proyecto_3
+build_property.RootNamespace = Proyecto_3
+build_property.ProjectDir = C:\Users\cgari\OneDrive\Proyectos\Proyecto 3\Proyecto 3\Proyecto 2\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\cgari\OneDrive\Proyectos\Proyecto 3\Proyecto 3\Proyecto 2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Empleados/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Empleados/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Empleados/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Empleados/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Empleados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Parqueos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFycXVlb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Parqueos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFycXVlb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Parqueos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFycXVlb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Parqueos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFycXVlb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Parqueos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFycXVlb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Reportes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Reportes/TopParqueos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcVG9wUGFycXVlb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Reportes/VentasDia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcVmVudGFzRGlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Reportes/VentasMes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcVmVudGFzTWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Tiquetes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlxdWV0ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Tiquetes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlxdWV0ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Tiquetes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlxdWV0ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Tiquetes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlxdWV0ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Tiquetes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlxdWV0ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/cgari/OneDrive/Proyectos/Proyecto 3/Proyecto 3/Proyecto 2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4tqpa91h5u

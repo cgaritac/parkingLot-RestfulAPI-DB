@@ -1,0 +1,41 @@
+﻿@model Proyecto_3.Models.Reporte
+
+@{
+    ViewData["Title"] = "VentasRango";
+}
+
+<h1 style="text-align:center" class="mb-5">Ventas del Rango @Model.Ingreso.ToString("dd/MM/yyyy") al @Model.Salida.ToString("dd/MM/yyyy")</h1>
+
+<div>
+    <h4>Detalles del Reporte</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            <text>Fecha Inicial</text>
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.Ingreso.ToString("dd/MM/yyyy")
+        </dd>
+        <dt class = "col-sm-2">
+            <text>Fecha Final</text>
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.Salida.ToString("dd/MM/yyyy")
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdParqueo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdParqueo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Venta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Venta)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Regresar</a>
+</div>

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Proyecto_3.Models.Reporte>
+
+@{
+    ViewData["Title"] = "MejoresParqueos";
+}
+
+<h1 style="text-align:center" class="mb-5">Listado de los 2 Parqueos con mas Ventas en @Model.FirstOrDefault()?.Mes</h1>
+
+<p>
+    <a asp-action="Index">Regresar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdParqueo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Venta)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdParqueo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Venta)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

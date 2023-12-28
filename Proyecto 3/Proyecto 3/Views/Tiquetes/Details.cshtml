@@ -1,0 +1,82 @@
+﻿@model Proyecto_3.Models.Tiquete
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 style="text-align:center">TIQUETE N° @Html.DisplayFor(model => model.Id)</h1>
+
+<div>
+    <h2>Datos del Tiquete</h2>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ingreso)
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.Ingreso.ToString("dd/MM/yyyy HH:mm:ss")
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Salida)
+        </dt>
+        <dd class = "col-sm-10">
+            @if (Model.Salida == new DateTime(1, 1, 1))
+            {
+                <text>N.A.</text>
+            }
+            else
+            {
+                @Model.Salida.ToString("dd/MM/yyyy HH:mm:ss")
+            }
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Venta)
+        </dt>
+        <dd class = "col-sm-10">
+            @if (Model.Venta == 0)
+            {
+                <text>N.A.</text>
+            }
+            else
+            {
+                @Html.DisplayFor(model => model.Venta)
+            }
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdParqueo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdParqueo)
+        </dd>
+    </dl>
+</div>
+<div>
+    @if (Model.Estado == "Abierto")
+    {
+        <button onclick="location.href='@Url.Action("Edit", "Tiquetes", new { id = Model.Id })'" class="mb-3 btn-primary">Ir a cerrar tiquete</button>
+
+        <a asp-action="Index"> Regresar </a>
+    }
+    else
+    {
+        <a asp-action="Index"> Regresar </a>
+    }
+</div>

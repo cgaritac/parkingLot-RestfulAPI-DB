@@ -1,0 +1,73 @@
+﻿@model Proyecto_3.Models.Parqueo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="text-align:center">AGREGAR PARQUEO</h1>
+
+<h2>Datos del Parqueo</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <strong>
+                    @Html.DisplayNameFor(model => model.Id):
+                </strong>
+                @Html.DisplayFor(model => model.Id)
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="Nombre" class="control-label"></label>
+                </strong>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="CantidadVehiculosMax" class="control-label"></label>
+                </strong>
+                <input asp-for="CantidadVehiculosMax" class="form-control" />
+                <span asp-validation-for="CantidadVehiculosMax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="HoraApertura" class="control-label"></label>
+                </strong>
+                <input asp-for="HoraApertura" class="form-control" type="time" />
+                <span asp-validation-for="HoraApertura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="HoraCierre" class="control-label"></label>
+                </strong>
+                <input asp-for="HoraCierre" class="form-control" type="time" />
+                <span asp-validation-for="HoraCierre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="TarifaHora" class="control-label"></label>
+                </strong>
+                <input asp-for="TarifaHora" class="form-control" />
+                <span asp-validation-for="TarifaHora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <strong>
+                    <label asp-for="TarifaMedia" class="control-label"></label>
+                </strong>
+                <input asp-for="TarifaMedia" class="form-control" />
+                <span asp-validation-for="TarifaMedia" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-4">
+                <input id="btnAgregar" type="submit" value="Agregar" class="btn btn-primary" /> |
+                <a asp-action="Index">Regresar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
