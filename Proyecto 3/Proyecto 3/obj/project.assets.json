@@ -9480,22 +9480,25 @@
   },
   "packageFolders": {
     "C:\\Users\\cgari\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cgari\\OneDrive\\Proyectos\\Proyecto 3\\Proyecto 3\\Proyecto 3\\Proyecto 3.csproj",
+      "projectUniqueName": "C:\\Users\\cgari\\OneDrive\\Proyectos\\parkingLot-MVCRestfulAPI-DB\\Proyecto 3\\Proyecto 3\\Proyecto 3.csproj",
       "projectName": "Proyecto 3",
-      "projectPath": "C:\\Users\\cgari\\OneDrive\\Proyectos\\Proyecto 3\\Proyecto 3\\Proyecto 3\\Proyecto 3.csproj",
+      "projectPath": "C:\\Users\\cgari\\OneDrive\\Proyectos\\parkingLot-MVCRestfulAPI-DB\\Proyecto 3\\Proyecto 3\\Proyecto 3.csproj",
       "packagesPath": "C:\\Users\\cgari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cgari\\OneDrive\\Proyectos\\Proyecto 3\\Proyecto 3\\Proyecto 3\\obj\\",
+      "outputPath": "C:\\Users\\cgari\\OneDrive\\Proyectos\\parkingLot-MVCRestfulAPI-DB\\Proyecto 3\\Proyecto 3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\cgari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9503,6 +9506,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

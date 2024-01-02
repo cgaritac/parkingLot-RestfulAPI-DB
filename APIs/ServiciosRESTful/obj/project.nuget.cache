@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6ozkZR6jRQP92QniREkpYsXdeNenDDRqmcfWjRGSbFBxsYb3weKo+QkP8G57yYNGzsza1UnMz//XgYuQi5JISA==",
+  "dgSpecHash": "fKGeOKrp3Jg/k2oLJYZdKH0y7Y55sh+RTmUKeYxQQieFZsLUwaKucfnz7y0KFVgmd40x6KBfNATWobi17zQlPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cgari\\OneDrive\\Proyectos\\Proyecto 3\\APIs\\ServiciosRESTful\\ServiciosRESTful.csproj",
+  "projectFilePath": "C:\\Users\\cgari\\OneDrive\\Proyectos\\parkingLot-MVCRestfulAPI-DB\\APIs\\ServiciosRESTful\\ServiciosRESTful.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cgari\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\cgari\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
